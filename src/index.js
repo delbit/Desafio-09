@@ -14,7 +14,7 @@ server.on('error', (err) => {
 });
 
 //Iniciando la carpeta public
-const publicPath = path.resolve(__dirname, './public');
+const publicPath = path.resolve(__dirname, './../public');
 app.use('/', express.static(publicPath));
 
 // Módulos usados para aceptar el método post con JSON o urlencoded
